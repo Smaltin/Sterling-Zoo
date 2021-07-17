@@ -3,7 +3,7 @@ package Animals;
 public abstract class BaseAnimal {
     private String name;
     private Double weight; //lbs
-    private Double height; //inches
+    private Double height; //feet
     private String color;
 
     public BaseAnimal(){
@@ -13,12 +13,24 @@ public abstract class BaseAnimal {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public Double getWeight() {
         return weight;
     }
 
+    public void setWeight(Double weight) {
+        this.weight = weight;
+    }
+
     public Double getHeight() {
         return height;
+    }
+
+    public void setHeight(Double height) {
+        this.height = height;
     }
 
     public String getColor() {
@@ -27,17 +39,5 @@ public abstract class BaseAnimal {
 
     public void setColor(String color) {
         this.color = color;
-    }
-
-    public void setHeight(Double height) {
-        this.height = height;
-    }
-
-    public void setWeight(Double weight) {
-        this.weight = weight;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }
