@@ -1,12 +1,12 @@
 package Animals;
 
 public abstract class BaseAnimal {
-    private String name;
-    private Double weight; //lbs
-    private Double height; //feet
-    private String color;
+    private String name = "BaseName";
+    private Double weight = 1.0; //lbs
+    private Double height = 1.0; //feet
+    private String color = "BaseColor";
 
-    public BaseAnimal(){
+    public BaseAnimal() {
     }
 
     public String getName() {
